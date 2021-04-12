@@ -15,7 +15,8 @@
 }
 
 .logo,
-.menu { display: inline-block;
+.menu {
+  display: inline-block;
   border: dashed 1px red;
 }
 
