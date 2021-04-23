@@ -6,7 +6,7 @@
 .header {
    display: flex;
    justify-content: space-between;
-   margin-bottom: 100px;
+   margin-bottom: 135px;
 }
 
 .logo,
@@ -16,8 +16,8 @@
 
 .logo {
    position: relative;
-   padding: 40px 0;
-   padding-left: 44px;
+   padding: 33px 0;
+   padding-left: 42px;
    font: bold 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
@@ -44,16 +44,13 @@
 
 .menu {
    display: flex;
-   align-items: center;
-   padding: 0 13px;
-   
+   align-items: center; 
 }
 
 .menu__item {
    position: relative;
-   margin-right: 26px;
-   padding: 0 13px;
-   font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+   margin: 6px 27px 0 0;
+   font: 500 18px/21px'Roboto', arial, helvetica, sans-serif;
    color: #000;
    text-decoration: none;
    transition: opacity .5s;
@@ -94,20 +91,22 @@
 
  .main__title {
    margin: 0 0 40px 0;
-   font: bold 50px/65px 'pt_serifbold', arial, helvetica, sans-serif;
+   font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
+   padding-top: 79px;
  }
  
  .main__subtitle {
    margin: 0 0 41px 0;
-   font: 18px/21px Roboto, arial, helvetica, sans-serif;
+   font: 400 22px/26px 'Roboto', arial, helvetica, sans-serif;
+   padding-right: 110px;
   }
 
   .main__button {
     display: inline-block;
-    font: 14px/16px Roboto, arial, helvetica, sans-serif;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
     color: #fff;
     background: #0056EC;
-    padding: 14px 16px;
+    padding: 14px 34px 16px 19px;
     text-decoration: none;
     border-radius: 4px;
     transition: opacity .5s;
@@ -139,16 +138,16 @@
    
    .main__title {
      margin-bottom: 44px;
-     font: bold 30px/39px pt_serif, arial, helvetica, sans-serif;
+     font: bold 30px/39px 'pt_serif', arial, helvetica, sans-serif;
    }
          
     .main__subtitle {
       margin-bottom: 25px;
-      font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+      font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
     }
    
    .main__button {
-     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+     font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
    }
    
    }
