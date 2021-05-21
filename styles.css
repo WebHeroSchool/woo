@@ -6,7 +6,7 @@
 .header {
    display: flex;
    justify-content: space-between;
-   margin-bottom: 135px;
+   margin-bottom: 138px;
 }
 
 .logo,
@@ -90,13 +90,13 @@
  }
 
  .main__title {
-   margin: 0 0 34px 0;
+   margin: 0 0 39px 0;
    font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
-   padding-top: 79px;
+   padding-top: 74px;
  }
  
  .main__subtitle {
-   margin: 0 0 41px 0;
+   margin: 0 0 38px 0;
    font: 400 22px/26px 'Roboto', arial, helvetica, sans-serif;
    padding-right: 110px;
   }
