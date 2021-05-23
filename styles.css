@@ -1,81 +1,76 @@
 .wrapper {
-  margin: auto;
-  width: 80%;
-  border: dashed 1px red;
-}
+   margin: auto;
+   width: 80%;
+   }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  border: dashed 1px red;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 138px;
 }
 
 .logo,
 .menu {
-  display: inline-block;
-  border: dashed 1px red;
-}
+   display: inline-block;
+  }
 
 .logo {
-  position: relative;
-  padding: 40px 0;
-  padding-left: 44px;
-  font: bold 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
+   position: relative;
+   padding: 33px 0;
+   padding-left: 42px;
+   font: bold 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
 .logo__circle {
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
+   position: absolute;
+   left: 0px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 28px;
+   height: 28px;
   border-radius: 50%;
-  opacity: .7;
+   opacity: .7;
 }
 
 .logo__circle_color_dark-blue {
-  background: #0056EC;
+   background: #0056EC;
 }
 
 .logo__circle_color_blue {
-left: 8px;
-top: 56%;
-background: #C8DBFB;
+   left: 8px;
+   top: 56%;
+   background: #C8DBFB;
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  padding: 0 13px;
-  border: dashed 1px red;
+   display: flex;
+   align-items: center; 
 }
 
 .menu__item {
-  position: relative;
-  margin-right: 26px;
-  padding: 0 13px;
-  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
-  color: #000;
-  text-decoration: none;
-  transition: opacity .5s;
+   position: relative;
+   margin: 6px 27px 0 0;
+   font: 500 18px/21px'Roboto', arial, helvetica, sans-serif;
+   color: #000;
+   text-decoration: none;
+   transition: opacity .5s;
 }
 
 .menu__item:hover:after {
-  position: absolute;
-  left: 0;
-  display: block;
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: #0056EC;
-  opacity: 0;
- transition: opacity .5s, width .5s;
+   position: absolute;
+   left: 0;
+   display: block;
+   content: '';
+   width: 100%;
+   height: 3px;
+   background: #0056EC;
+   opacity: 0;
+   transition: opacity .5s, width .5s;
  }
  
  .menu__item:hover {
-  color: red;
-  opacity: 0.5;
+   color: red;
+   opacity: 0.5;
   }
   
   .menu__item:hover:after, 
@@ -85,6 +80,96 @@ background: #C8DBFB;
    }
    
 .menu__item:last-child {
-  padding-right: 0;
-  margin-right: 0;
+   padding-right: 0;
+   margin-right: 0;
 }
+
+.menu__item_active:after {
+   position: absolute;
+   left: 0;
+   display: block;
+   content: '';
+   width: 100%;
+   height: 3px;
+   background: #0056EC;
+}
+
+.main {
+   padding:  0 63% 230px 0;
+   background: top right no-repeat url(img/Frame.svg);
+ }
+
+ .main__title {
+   margin: 0 0 39px 0;
+   font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
+   padding-top: 74px;
+ }
+ 
+ .main__subtitle {
+   margin: 0 0 38px 0;
+   font: 400 22px/26px 'Roboto', arial, helvetica, sans-serif;
+   padding-right: 110px;
+  }
+
+  .main__button {
+    display: inline-block;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+    color: #fff;
+    background: #0056EC;
+    padding: 20px 34px 20px 19px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity .5s;
+  }
+
+  .main__title-text_highlight {
+   background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%);
+  }
+   
+  .main__button:hover {
+    opacity: .5;
+   }
+   
+ .circle{
+   background: center no-repeat url(img/Group16.svg);
+   width: 50px;
+   height: 20px;
+   margin: auto;
+   margin-top: 10px;
+ }
+
+   @media (max-width: 768px) {
+    .menu {
+     display: none;
+     text-align: center;
+
+    }
+      
+    .header {
+    margin-bottom: 16px;
+   }
+   
+   .main {
+     text-align: center;
+     padding: 55% 0 0;
+     background-size: 100%;
+     background-position: top center;
+     
+   }
+   
+   .main__title {
+     margin-bottom: 44px;
+     font: bold 30px/39px 'pt_serifbold', arial, helvetica, sans-serif;
+   }
+         
+    .main__subtitle {
+      margin-bottom: 25px;
+      font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
+    }
+   
+   .main__button {
+     font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+   }
+   
+   }
+   
