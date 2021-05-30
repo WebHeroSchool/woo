@@ -173,3 +173,32 @@
    
    }
    
+   @media (max-width: 1366px) {
+    .wrapper {
+       width: 68.4%; 
+     }
+
+    .header {
+       margin-bottom: 88px;
+     }
+
+     .logo {
+        padding-left: 39px;
+
+     }
+
+     .logo__circle {
+      top: 49%;
+     }
+
+     .menu__item {
+      font: 500 13.8px/17px;
+     }
+
+     .main__title {
+      margin: 0 0 39px 0;
+      font: 50px/85px ;
+      padding-top: 14px;
+     }
+
+   }
