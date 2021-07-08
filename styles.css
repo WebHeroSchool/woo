@@ -167,6 +167,11 @@ display: none;
       font-size: 14.3px;
     }
 
+    .menu__item_active:after {
+
+    top: 18.5px;
+    }
+
     .main__title {
      margin: 0 0 39px 0;
      font-size: 50px ;
@@ -306,10 +311,10 @@ display: none;
   visibility: hidden;
   top: 0;
   left: -100%;
-  width: 300px;
+  width: 100%;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
+  padding: 240px 0;
   list-style: none;
   text-align: center;
   background-color: #ECEFF1;
@@ -320,10 +325,11 @@ display: none;
 /* элементы меню */
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 30px 24px;
+  line-height: 35px;
   color: #333;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 55px;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
@@ -339,8 +345,7 @@ display: none;
 
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
-  tra
-  nsform: rotate(0);
+  transform: rotate(0);
 }
 
 #menu__toggle:checked ~ .menu__btn > span::after {
@@ -413,13 +418,25 @@ display: none;
       left: 326px;
       width: 26px;
       height: 29px;
-      
-  }
+    }
 
+    .menu__box {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 170px 0;
+    }
+
+    .menu__item {
+      padding: 13px 0;
+      line-height: 28px;
+      font-size: 30px;
+    }
+  
     .logo__circle {
       width: 28px;
      height: 28px;
-     }
+    }
     
    
    .main {
