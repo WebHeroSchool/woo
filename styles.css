@@ -192,8 +192,8 @@ display: none;
     }
 
     .main__button {
-      font-size: 13px;
-      padding: 12px 27px;
+      font-size: 14px;
+      padding: 12px 25px 12px 17px;
     }
 
   }
@@ -241,8 +241,8 @@ display: none;
     }
 
     .main__button {
-      font-size: 13px;
-      padding: 12px 27px;
+      font-size: 14px;
+      padding: 11px 24px 13px 18px;
     }
   }
 
@@ -253,136 +253,135 @@ display: none;
 
     .header {
      margin-bottom: 16px;
-   }
+    }
    
    .menu {
      display: none;
      text-align: center;
     }
 
-
     .hamburger-menu{
       display: flex;
     }
-/* скрываем чекбокс */
-#menu__toggle {
-  opacity: 0;
-}
 
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-  position: fixed;
-  top: 26px;
-  left: 700px;
-  width: 50px;
-  height: 25px;
-  cursor: pointer;
-  z-index: 1;
-}
+   /* скрываем чекбокс */
+    #menu__toggle {
+     opacity: 0;
+    }
 
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-  transition-duration: .25s;
-}
-
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-
-/* контейнер меню */
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 240px 0;
-  list-style: none;
-  text-align: center;
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  transition-duration: .25s;
-}
-
-/* элементы меню */
-.menu__item {
-  display: block;
-  padding: 30px 24px;
-  line-height: 35px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 55px;
-  font-weight: 600;
-  text-decoration: none;
-  transition-duration: .25s;
-}
-
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
-
-.logo__text {
-    display: none;
-}
-    
-  .logo__circle {
+    /* стилизуем кнопку */
+    .menu__btn {
+     display: flex; /* используем flex для центрирования содержимого */
+     align-items: center;  /* центрируем содержимое кнопки */
+     position: fixed;
+     top: 26px;
+     left: 700px;
      width: 50px;
-     height: 50px;
-  }
+     height: 25px;
+     cursor: pointer;
+     z-index: 1;
+    }
 
-     .logo__circle_color_dark-blue {
-      top: 30px;
-     }
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+     .menu__btn > span::before,
+     .menu__btn > span::after {
+     display: block;
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     background-color: #616161;
+     transition-duration: .25s;
+    }
 
-   .main {
+    .menu__btn > span::before {
+     content: '';
+     top: -8px;
+    } 
+
+   .menu__btn > span::after {
+     content: '';
+     top: 8px;
+    }
+
+    /* контейнер меню */
+    .menu__box {
+     display: block;
+     position: fixed;
+     visibility: hidden;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 240px 0;
+     list-style: none;
      text-align: center;
-     padding: 70% 0 0;
-     background-size: 80%;
-     background-position: top center;
-     
-   }
+     background-color: #ECEFF1;
+     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+     transition-duration: .25s;
+    }
+
+    /* элементы меню */
+    .menu__item {
+     display: block;
+     padding: 30px 24px;
+     line-height: 35px;
+     color: #333;
+     font-family: 'Roboto', sans-serif;
+     font-size: 55px;
+     font-weight: 600;
+     text-decoration: none;
+     transition-duration: .25s;
+    }
+
+    .menu__item:hover {
+     background-color: #CFD8DC;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+     transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+     top: 0;
+     transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+     top: 0;
+     transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .menu__box {
+     visibility: visible;
+     left: 0;
+    }
+
+    .logo__text {
+     display: none;
+    }
+    
+    .logo__circle {
+      width: 50px;
+      height: 50px;
+    }
+
+    .logo__circle_color_dark-blue {
+      top: 30px;
+    }
+
+    .main {
+      text-align: center;
+      padding: 70% 0 0;
+      background-size: 80%;
+      background-position: top center;
+    }
    
-   .main__title {
-     margin-bottom: 40px;
-     font-size: 50px;
-   }
+    .main__title {
+      margin-bottom: 40px;
+      font-size: 50px;
+    }
          
     .main__subtitle {
      margin-bottom: 30px;
@@ -391,10 +390,10 @@ display: none;
      line-height: 35px;
     }
    
-   .main__button {
+    .main__button {
      padding: 25px;
      font-size: 25px;
-   }
+    }
    
   }
    
@@ -405,7 +404,7 @@ display: none;
 
     .header {
       margin-bottom: 14px;
-   }
+    }
    
    .menu {
      display: none;
@@ -434,25 +433,24 @@ display: none;
     }
   
     .logo__circle {
-      width: 28px;
+     width: 28px;
      height: 28px;
     }
     
    
-   .main {
+    .main {
      text-align: center;
      margin-left: 3px;
      padding: 74% 0 0;
      background-size: 86%;
-     background-position: top center;
-     
-   }
+     background-position: top center; 
+    }
    
-   .main__title {
+    .main__title {
      margin-bottom: 32px;
      font-size: 30px;
      line-height: 39.5px;
-   }
+    }
          
     .main__subtitle {
      margin: 0 30px 24.6px 36px;
@@ -460,8 +458,8 @@ display: none;
      line-height: 19.5px;
     }
    
-   .main__button {
-    padding: 12px 27px;
-     font-size: 13px;
-   }
+    .main__button {
+     padding: 12px 26px 12px 15px;
+     font-size: 14px;
+    }
   }
