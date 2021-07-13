@@ -181,7 +181,7 @@ display: none;
 
     .main {
       padding: 0 44% 112px 0;
-      background-size: 514px ;
+      background-size: 55.4% ;
     }
 
     .main__subtitle {
@@ -230,7 +230,7 @@ display: none;
 
     .main {
       padding: 0 44% 112px 0;
-      background-size: 514px ;
+      background-size: 55.4% ;
     }
 
     .main__subtitle {
@@ -275,7 +275,7 @@ display: none;
      align-items: center;  /* центрируем содержимое кнопки */
      position: fixed;
      top: 26px;
-     left: 700px;
+     left: 90%;
      width: 50px;
      height: 25px;
      cursor: pointer;
