@@ -1,5 +1,6 @@
-.wrapper {
-   margin: auto;
+
+.wrapper{
+  margin: auto;
    width: 80%;
    }
 
@@ -276,7 +277,7 @@ display: none;
      position: fixed;
      top: 26px;
      left: 90%;
-     width: 50px;
+     width: 35px;
      height: 25px;
      cursor: pointer;
      z-index: 1;
@@ -289,7 +290,7 @@ display: none;
      display: block;
      position: absolute;
      width: 100%;
-     height: 2px;
+     height: 3px;
      background-color: #0056EC;
      transition-duration: .25s;
     }
@@ -414,8 +415,15 @@ display: none;
      text-align: center;
     }
 
+    .menu__btn > span,
+     .menu__btn > span::before,
+     .menu__btn > span::after {
+     display: block;
+     position: absolute;
+     height: 3px;
+     }
+
     .menu__btn {
-      
       top: 26px;
       left: 326px;
       width: 26px;
