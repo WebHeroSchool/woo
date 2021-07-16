@@ -148,11 +148,11 @@ display: none;
   border-radius: 10px;
 }
 
-.main__button:active {
-  color: #000
+.main__button:hover {
+  color: #fff;
 }
 
-.main__button:active:after {
+.main__button:hover:after {
   background: transparent;
 }
 
@@ -180,10 +180,6 @@ display: none;
 
 .main__title-text_highlight {
   background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%);
-}
-   
-.main__button:hover {
-  opacity: .5;
 }
    
 .circle{
